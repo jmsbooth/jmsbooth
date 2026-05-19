@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 280" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Lattix Zero Trust runtime — operational status readout">
+  <defs>
+    <pattern id="gE" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#141414" stroke-width="0.5"/>
+    </pattern>
+    <linearGradient id="scanE" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFD60A" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#FFD60A" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#FFD60A" stop-opacity="0"/>
+    </linearGradient>
+    <style>
+      .m { font-family: "IBM Plex Mono","JetBrains Mono","Courier New",monospace; }
+      .border { fill: #FFD60A; font-size: 14px; }
+      .wm { fill: #FFD60A; font-size: 14px; font-weight: 600; }
+      .dim { fill: #5A5A5A; font-size: 12px; letter-spacing: 1px; }
+      .label { fill: #C9D1D9; font-size: 12px; letter-spacing: 1px; }
+      .ok { fill: #FFD60A; font-size: 12px; letter-spacing: 1px; font-weight: 500; }
+    </style>
+  </defs>
+
+  <rect width="1280" height="280" fill="#0A0A0A"/>
+  <rect width="1280" height="280" fill="url(#gE)" opacity="0.6"/>
+
+  <!-- slow horizontal scan sweep -->
+  <rect x="0" y="-80" width="1280" height="80" fill="url(#scanE)">
+    <animate attributeName="y" from="-80" to="280" dur="9s" begin="2s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- TOP BORDER -->
+  <text class="m border" x="24" y="40" xml:space="preserve" opacity="0">╔══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗<animate attributeName="opacity" from="0" to="1" dur="0.25s" begin="0s" fill="freeze"/></text>
+
+  <!-- LEFT BORDER -->
+  <text class="m border" x="24" font-size="14" opacity="0">
+    <tspan x="24" y="62">║</tspan>
+    <tspan x="24" dy="18">║</tspan>
+    <tspan x="24" dy="18">║</tspan>
+    <tspan x="24" dy="18">║</tspan>
+    <tspan x="24" dy="18">║</tspan>
+    <tspan x="24" dy="18">║</tspan>
+    <tspan x="24" dy="18">║</tspan>
+    <tspan x="24" dy="18">║</tspan>
+    <tspan x="24" dy="18">║</tspan>
+    <tspan x="24" dy="18">║</tspan>
+    <animate attributeName="opacity" from="0" to="1" dur="0.25s" begin="0.05s" fill="freeze"/>
+  </text>
+
+  <!-- RIGHT BORDER -->
+  <text class="m border" x="1248" font-size="14" opacity="0">
+    <tspan x="1248" y="62">║</tspan>
+    <tspan x="1248" dy="18">║</tspan>
+    <tspan x="1248" dy="18">║</tspan>
+    <tspan x="1248" dy="18">║</tspan>
+    <tspan x="1248" dy="18">║</tspan>
+    <tspan x="1248" dy="18">║</tspan>
+    <tspan x="1248" dy="18">║</tspan>
+    <tspan x="1248" dy="18">║</tspan>
+    <tspan x="1248" dy="18">║</tspan>
+    <tspan x="1248" dy="18">║</tspan>
+    <animate attributeName="opacity" from="0" to="1" dur="0.25s" begin="0.05s" fill="freeze"/>
+  </text>
+
+  <!-- LATTIX WORDMARK -->
+  <text class="m wm" x="56" y="74" xml:space="preserve" opacity="0">██╗      █████╗ ████████╗████████╗██╗ ██╗  ██╗<animate attributeName="opacity" from="0" to="1" dur="0.18s" begin="0.25s" fill="freeze"/></text>
+  <text class="m wm" x="56" y="92" xml:space="preserve" opacity="0">██║     ██╔══██╗╚══██╔══╝╚══██╔══╝██║ ╚██╗██╔╝<animate attributeName="opacity" from="0" to="1" dur="0.18s" begin="0.35s" fill="freeze"/></text>
+  <text class="m wm" x="56" y="110" xml:space="preserve" opacity="0">██║     ███████║   ██║      ██║   ██║  ╚███╔╝ <animate attributeName="opacity" from="0" to="1" dur="0.18s" begin="0.45s" fill="freeze"/></text>
+  <text class="m wm" x="56" y="128" xml:space="preserve" opacity="0">██║     ██╔══██║   ██║      ██║   ██║  ██╔██╗ <animate attributeName="opacity" from="0" to="1" dur="0.18s" begin="0.55s" fill="freeze"/></text>
+  <text class="m wm" x="56" y="146" xml:space="preserve" opacity="0">███████╗██║  ██║   ██║      ██║   ██║ ██╔╝ ██╗<animate attributeName="opacity" from="0" to="1" dur="0.18s" begin="0.65s" fill="freeze"/></text>
+  <text class="m wm" x="56" y="164" xml:space="preserve" opacity="0">╚══════╝╚═╝  ╚═╝   ╚═╝      ╚═╝   ╚═╝ ╚═╝  ╚═╝<animate attributeName="opacity" from="0" to="1" dur="0.18s" begin="0.75s" fill="freeze"/></text>
+
+  <!-- RIGHT-SIDE META -->
+  <text class="m dim" x="500" y="74" xml:space="preserve" opacity="0">// ZERO TRUST RUNTIME<animate attributeName="opacity" from="0" to="1" dur="0.2s" begin="0.4s" fill="freeze"/></text>
+  <text class="m dim" x="500" y="92" xml:space="preserve" opacity="0">// v.2026.05<animate attributeName="opacity" from="0" to="1" dur="0.2s" begin="0.5s" fill="freeze"/></text>
+  <text class="m" x="500" y="110" xml:space="preserve" opacity="0"><tspan class="dim">// STATUS  [ </tspan><tspan class="ok">OPERATIONAL</tspan><tspan class="dim"> ]</tspan><animate attributeName="opacity" from="0" to="1" dur="0.2s" begin="0.6s" fill="freeze"/></text>
+  <text class="m" x="500" y="128" xml:space="preserve" opacity="0"><tspan class="dim">// PERIMETER  </tspan><tspan class="ok">NONE</tspan><animate attributeName="opacity" from="0" to="1" dur="0.2s" begin="0.7s" fill="freeze"/></text>
+  <text class="m dim" x="500" y="146" xml:space="preserve" opacity="0">// BUILT BY  jms<animate attributeName="opacity" from="0" to="1" dur="0.2s" begin="0.8s" fill="freeze"/></text>
+  <text class="m" x="500" y="164" xml:space="preserve" opacity="0"><tspan class="dim">// </tspan><tspan class="ok">LATTIX.IO</tspan><animate attributeName="opacity" from="0" to="1" dur="0.2s" begin="0.9s" fill="freeze"/></text>
+
+  <!-- DIVIDER -->
+  <text class="m dim" x="56" y="190" xml:space="preserve" opacity="0">────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────<animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="1.0s" fill="freeze"/></text>
+
+  <!-- STATUS ROW 1 -->
+  <text class="m" x="56" y="212" xml:space="preserve" opacity="0"><tspan class="label">&gt; PERIMETER ASSUMPTION</tspan><tspan class="dim"> ........... </tspan><tspan class="ok">NONE</tspan><tspan class="dim">       </tspan><tspan class="label">&gt; POLICY ENGINE</tspan><tspan class="dim"> ............ </tspan><tspan class="ok">ACTIVE</tspan><animate attributeName="opacity" from="0" to="1" dur="0.25s" begin="1.15s" fill="freeze"/></text>
+
+  <!-- STATUS ROW 2 -->
+  <text class="m" x="56" y="232" xml:space="preserve" opacity="0"><tspan class="label">&gt; DATA-CENTRIC CONTROLS</tspan><tspan class="dim"> ......... </tspan><tspan class="ok">ENFORCED</tspan><tspan class="dim">   </tspan><tspan class="label">&gt; PQC PRIMITIVES</tspan><tspan class="dim"> .......... </tspan><tspan class="ok">LOADED</tspan><animate attributeName="opacity" from="0" to="1" dur="0.25s" begin="1.3s" fill="freeze"/></text>
+
+  <!-- BOTTOM BORDER -->
+  <text class="m border" x="24" y="256" xml:space="preserve" opacity="0">╚══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝<animate attributeName="opacity" from="0" to="1" dur="0.25s" begin="1.45s" fill="freeze"/></text>
+
+  <!-- Blinking cursor on final line (after reveal completes) -->
+  <rect x="1196" y="222" width="9" height="13" fill="#FFD60A" opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.45;0.46;0.95;0.96;1" dur="1.2s" begin="1.7s" repeatCount="indefinite"/>
+  </rect>
+</svg>
