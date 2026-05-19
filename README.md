@@ -1,7 +1,7 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg">
-  <img alt="Lattix — Zero Trust runtime. Operational. Built by jms." src="assets/banner-dark.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jmsbooth/jmsbooth/HEAD/banner-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/jmsbooth/jmsbooth/HEAD/banner-light.svg">
+  <img alt="Lattix — Zero Trust runtime. Operational. Built by jms." src="https://raw.githubusercontent.com/jmsbooth/jmsbooth/HEAD/banner-dark.svg" width="100%">
 </picture>
 
 ```text
